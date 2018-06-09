@@ -5,7 +5,6 @@ services:
     container_name: jenkins
     volumes:
       - jenkins_home:/var/jenkins
-      - ./spring-boot-sample-atmosphere:/code
     ports:
       - "8080:8080"
       - "50000:50000"
