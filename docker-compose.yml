@@ -8,6 +8,10 @@ services:
     ports:
       - "8080:8080"
       - "50000:50000"
-
+  target_service:
+    build: 
+      context: .
+      dockerfile: target_dockerfile
+    container_name: target_service
 volumes:
   jenkins_home:
